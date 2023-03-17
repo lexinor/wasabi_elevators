@@ -66,8 +66,8 @@ end)
 
 AddEventHandler('wasabi_elevator:noAccess', function()
     lib.notify({
-        title = 'No Access',
-        description = 'You do not have access to this floor',
+        title = 'Accès refusé',
+        description = "Vous n'avez pas accès à ce niveau !",
         type = 'error'
     })
 end)
@@ -81,7 +81,7 @@ AddEventHandler('wasabi_elevator:openMenu', function(data)
     for k,v in pairs(elevatorData) do
         if k == floor then
             table.insert(Options, {
-                title = v.title..' (Current)',
+                title = v.title..' (Actuel)',
                 description = v.description,
                 event = '',
                 --args = { elevator = elevator, floor = k }
@@ -124,7 +124,7 @@ AddEventHandler('wasabi_elevator:openMenu', function(data)
     end
     lib.registerContext({
 		id = 'elevator_menu',
-		title = 'Elevator Menu',
+		title = 'Menu Ascenseur',
 		options = Options
 	})
 
