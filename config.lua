@@ -35,9 +35,22 @@ Config.Elevators = {
     },
     VespucciPD = { -- Elevator name(Doesn't show it's just to name table)
         {
-            coords = vec3(612.8630, -19.0842, 91.5372),
-            heading = 342.6860,
-            title = '1 : Niv. Supérieur',
+            coords = vec3(613.6105, -16.9110, 91.5355),
+            heading = 335.4875,
+            title = '2 : Niv. Bureaux',
+            description = '',
+            target = {
+                width = 5,
+                length = 4,
+            },
+            groups = {-- Job locks
+                'police',
+            },
+        },
+        {
+            coords = vec3(615.0957, -12.3910, 87.0516),
+            heading = 332.7471,
+            title = '1 : Niv. laboratoire',
             description = '',
             target = {
                 width = 5,
@@ -58,8 +71,8 @@ Config.Elevators = {
             }
         },
         {
-            coords = vec3(541.9922, 26.7272, 69.5128),
-            heading = 117.8558, -- Heading of how will spawn on floor
+            coords = vec3(539.6260, 25.1361, 69.5111),
+            heading = 120.5626, -- Heading of how will spawn on floor
             title = '-1 : Niv. Parking', -- Title 
             description = '', -- Description
             target = { -- Target length/width
