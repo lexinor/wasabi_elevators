@@ -5,42 +5,52 @@
 Config = {}
 
 Config.checkForUpdates = false -- Check for Updates?
+Config.DistanceToInteract = 3.0
 
 Config.Elevators = {
-    PillboxElevatorNorth = { -- Elevator name(Doesn't show it's just to name table)
+    PillboxElevatorNorth = {
         [1] = {
-            coords = vec3(332.37, -595.56, 43.28), -- Coords, if you're new; last number is heading
-            heading = 70.65, -- Heading of how will spawn on floor
-            title = 'Floor 2', -- Title 
-            description = 'Main Floor', -- Description
-            target = { -- Target length/width
-                width = 5,
-                length = 4
-            },
-            groups = {-- Job locks
-                'police',
-                'ambulance'
-            },
-        },
-        [2] = {
-            coords = vec3(344.31, -586.12, 28.79),
-            heading = 252.84,
-            title = 'Floor 1',
-            description = 'Lower Floor',
+            coords = vec3(338.9650, -583.9569, 74.1656), -- Coords, if you're new; last number is heading
+            heading = 248.9944, -- Heading of how will spawn on floor
+            title = "2 : Niv. Héliport",
+            description = '', -- Description
             target = {
                 width = 5,
-                length = 4,
-            } -- Example without group
+                length = 2,
+            },
+            groups = {-- Job locks
+                'ambulance',
+            },
+        },
+        [1] = {
+            coords = vec3(333.6807, -591.5565, 42.2676), -- Coords, if you're new; last number is heading
+            heading = 71.5000, -- Heading of how will spawn on floor
+            title = "1 : Niv. Supérieur",
+            description = '', -- Description
+            target = {
+                width = 5,
+                length = 2,
+            },            
+        },
+        [2] = {
+            coords = vec3(324.7710, -585.6014, 27.8474),
+            heading = 252.84,
+            title = "0 : Niv. Urgences",
+            description = '',
+            target = {
+                width = 5,
+                length = 2,
+            },
         },
     },
     VespucciPD = { -- Elevator name(Doesn't show it's just to name table)
         {
-            coords = vec3(613.6105, -16.9110, 91.5355),
+            coords = vec3(612.0579, -16.8042, 90.5355),
             heading = 335.4875,
             title = '2 : Niv. Bureaux',
             description = '',
             target = {
-                width = 5,
+                width = 2,
                 length = 4,
             },
             groups = {-- Job locks
@@ -48,12 +58,12 @@ Config.Elevators = {
             },
         },
         {
-            coords = vec3(615.0957, -12.3910, 87.0516),
+            coords = vec3(613.6888, -12.0177, 86.2911),
             heading = 332.7471,
             title = '1 : Niv. laboratoire',
             description = '',
             target = {
-                width = 5,
+                width = 3,
                 length = 4,
             },
             groups = {-- Job locks
@@ -61,23 +71,23 @@ Config.Elevators = {
             },
         },
         {
-            coords = vec3(614.3589, -14.8412, 82.7635),
+            coords = vec3(613.6132, -12.5847, 81.7600),
             heading = 339.8332,
             title = '0 : Niv. Accueil',
             description = '',
             target = {
-                width = 5,
-                length = 4,
-            }
+                width = 2,
+                length = 5,
+            },
         },
         {
-            coords = vec3(539.6260, 25.1361, 69.5111),
+            coords = vec3(540.1511, 25.5484, 68.5111),
             heading = 120.5626, -- Heading of how will spawn on floor
             title = '-1 : Niv. Parking', -- Title 
             description = '', -- Description
-            target = { -- Target length/width
-                width = 5,
-                length = 4
+            target = {
+                width = 2,
+                length = 2,
             },
             groups = {-- Job locks
                 'police',

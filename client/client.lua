@@ -152,7 +152,7 @@ CreateThread(function()
                             floor = a
                         },
                     },
-                    distance = 1.5 
+                    distance = Config.DistanceToInteract 
                 })
             else
                 exports[target]:AddBoxZone(k..':'..a, b.coords, b.target.width, b.target.length, {
@@ -172,7 +172,7 @@ CreateThread(function()
                             floor = a
                         },
                     },
-                    distance = 1.5
+                    distance = Config.DistanceToInteract
                 })
             end
         end
