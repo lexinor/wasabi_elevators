@@ -43,11 +43,11 @@ Config.Elevators = {
             },
         },
     },
-    VespucciPD = { -- Elevator name(Doesn't show it's just to name table)
+    RockfordHill = { -- Elevator name(Doesn't show it's just to name table)
         {
-            coords = vec3(612.0579, -16.8042, 90.5355),
-            heading = 335.4875,
-            title = '2 : Niv. Bureaux',
+            coords = vec3(-404.8072, -347.1181, 52.2548),
+            heading = 81.9136,
+            title = '4 : Niv. CPT / Labo',
             description = '',
             target = {
                 width = 2,
@@ -58,9 +58,22 @@ Config.Elevators = {
             },
         },
         {
-            coords = vec3(613.6888, -12.0177, 86.2911),
-            heading = 332.7471,
-            title = '1 : Niv. laboratoire',
+            coords = vec3(-405.2119, -347.1751, 47.5322),
+            heading = 80.4163,
+            title = '3 : Niv. CMD / Centrale',
+            description = '',
+            target = {
+                width = 2,
+                length = 4,
+            },
+            groups = {-- Job locks
+                'police',
+            },
+        },
+        {
+            coords = vec3(-404.7337, -347.1654, 42.5964),
+            heading = 82.0603,
+            title = '2 : Niv. Repos / Restauration',
             description = '',
             target = {
                 width = 3,
@@ -71,28 +84,17 @@ Config.Elevators = {
             },
         },
         {
-            coords = vec3(613.6132, -12.5847, 81.7600),
-            heading = 339.8332,
-            title = '0 : Niv. Accueil',
+            coords = vec3(-405.1387, -347.2711, 37.4327),
+            heading = 379.1401,
+            title = '1 : Niv. Bureau Offi / Accueil',
             description = '',
             target = {
                 width = 2,
                 length = 5,
             },
-        },
-        {
-            coords = vec3(540.1511, 25.5484, 68.5111),
-            heading = 120.5626, -- Heading of how will spawn on floor
-            title = '-1 : Niv. Parking', -- Title 
-            description = '', -- Description
-            target = {
-                width = 2,
-                length = 2,
-            },
             groups = {-- Job locks
                 'police',
             },
-        },
-        
+        },        
     },
 }

@@ -147,7 +147,7 @@ CreateThread(function()
                         {
                             event = 'wasabi_elevator:openMenu',
                             icon = 'fa-solid fa-hand',
-                            label = 'Interact',
+                            label = 'Prendre Ascenseur',
                             elevator = k,
                             floor = a
                         },
@@ -167,7 +167,7 @@ CreateThread(function()
                         {
                             event = 'wasabi_elevator:openMenu',
                             icon = 'fa-solid fa-hand',
-                            label = 'Interact',
+                            label = 'Prendre Ascenseur',
                             elevator = k,
                             floor = a
                         },
