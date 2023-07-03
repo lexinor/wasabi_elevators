@@ -9,7 +9,7 @@ Config.DistanceToInteract = 3.0
 
 Config.Elevators = {
     PillboxElevatorNorth = {
-        [1] = {
+        [0] = {
             coords = vec3(338.9650, -583.9569, 74.1656), -- Coords, if you're new; last number is heading
             heading = 248.9944, -- Heading of how will spawn on floor
             title = "2 : Niv. Héliport",
@@ -23,7 +23,7 @@ Config.Elevators = {
             },
         },
         [1] = {
-            coords = vec3(333.6807, -591.5565, 42.2676), -- Coords, if you're new; last number is heading
+            coords = vec3(334.2808, -590.2964, 42.2676), -- Coords, if you're new; last number is heading
             heading = 71.5000, -- Heading of how will spawn on floor
             title = "1 : Niv. Supérieur",
             description = '', -- Description
